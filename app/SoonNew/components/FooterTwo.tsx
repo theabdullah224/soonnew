@@ -15,8 +15,8 @@ import { motion, AnimatePresence, useAnimation } from "framer-motion";
 onst icons = [
   { src: tiktok, link: "https://www.tiktok.com/@etutor4me?_t=8pOCquOdGZV&_r=1" },
   { src: instagram, link: "https://www.instagram.com/etutor4me?igsh=MTBtaThtdm1nMTQzdQ%3D%3D&utm_source=qr" },
-  { src: twitter, link: "#" },  // Add actual link here
-  { src: youtube, link: "#" },  // Add actual link here
+  { src: twitter, link: "https://x.com" },  // Add actual link here
+  { src: youtube, link: "https://www.youtube.com" },  // Add actual link here
   { src: facebook, link: "https://www.facebook.com/profile.php?id=61564058677794" }
 ];
 const FooterTwo = () => {
