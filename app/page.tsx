@@ -259,8 +259,7 @@ export default function Home() {
               >
                 <LevelsHeading
                   headingClassName="mb:text-xl mb-8  leading-normal xl-default:text-6xl leading-relaxed"
-                  headingText="Unlock Your Tutoring Potential with Us!"
-                />
+                  headingText="Unlock Your Tutoring Potential with Us!" paragraphClassName={undefined} paragraphText={undefined}                />
 
                 <p className="mt-4 text-sm text-center xl-default:text-4xl  leading-relaxed font-roboto_medium">
                   At eTutor4Me, we’re all about connecting awesome tutors with
