@@ -27,6 +27,8 @@ import Email from './SoonNew/components/Email'
 
 
 
+
+
 export default function Home() {
   // const [currentPage, setCurrentPage] = useState<number>(0);
   const controls = useAnimation();
