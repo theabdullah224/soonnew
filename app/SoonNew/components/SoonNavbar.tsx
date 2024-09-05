@@ -34,7 +34,7 @@ const SoonNavbar = () => {
   };
 
   return (
-    <nav className='py-11 container mx-auto h-16 max-w-[900px] mb:max-w-[400px] mb:px-5 mb:flex mb:justify-center mb:items-center xl:py-9 lg:py-8'>
+    <nav className='py-11 container mx-auto h-16 max-w-[800px] border-2 mb:max-w-[400px] mb:px-5 mb:flex mb:justify-center mb:items-center xl:py-9 lg:py-8'>
       <ul className='flex items-center justify-between w-full'>
         {menuItems.map((item, index) => (
           <li

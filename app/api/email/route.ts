@@ -18,7 +18,7 @@ export async function POST(request: Request) {
     return NextResponse.json({ message: 'Email saved successfully' }, { status: 201 });
   } catch (error: any) {
     if (error.code === 11000) {
-      return NextResponse.json({ message: 'Email already exists' }, { status: 409 });
+      return NextResponse.json({ message: 'already exists' }, { status: 409 });
     } else {
       return NextResponse.json({ message: 'Error saving email', error: error.message }, { status: 500 });
     }
