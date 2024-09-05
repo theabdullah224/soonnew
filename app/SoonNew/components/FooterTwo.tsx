@@ -12,7 +12,7 @@ import facebook from "../../../public/fbicon.svg"
 import { motion, AnimatePresence, useAnimation } from "framer-motion";
 
 // Array of icons
-onst icons = [
+const icons = [
   { src: tiktok, link: "https://www.tiktok.com/@etutor4me?_t=8pOCquOdGZV&_r=1" },
   { src: instagram, link: "https://www.instagram.com/etutor4me?igsh=MTBtaThtdm1nMTQzdQ%3D%3D&utm_source=qr" },
   { src: twitter, link: "https://x.com" },  // Add actual link here
