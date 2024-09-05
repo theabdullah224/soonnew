@@ -12,12 +12,12 @@ import facebook from "../../../public/fbicon.svg"
 import { motion, AnimatePresence, useAnimation } from "framer-motion";
 
 // Array of icons
-const icons = [
-  tiktok,
-  instagram,
-  twitter,
-  youtube,
-  facebook
+onst icons = [
+  { src: tiktok, link: "https://www.tiktok.com/@etutor4me?_t=8pOCquOdGZV&_r=1" },
+  { src: instagram, link: "https://www.instagram.com/etutor4me?igsh=MTBtaThtdm1nMTQzdQ%3D%3D&utm_source=qr" },
+  { src: twitter, link: "#" },  // Add actual link here
+  { src: youtube, link: "#" },  // Add actual link here
+  { src: facebook, link: "https://www.facebook.com/profile.php?id=61564058677794" }
 ];
 const FooterTwo = () => {
   const [email, setEmail] = useState('');
@@ -77,15 +77,15 @@ const FooterTwo = () => {
           </div>
         </div>
         <div className='flex justify-center gap-9 py-4 mb:gap-8 lg:py-4 lg:gap-6'>
-          {icons.map((icon, index) => (
+           {icons.map((icon, index) => (
             <div key={index} className='flex items-center justify-center'>
-              <Image
-                src={icon}
-
-
-                alt={`Icon ${index + 1}`}
-                className='cursor-pointer icons hover:scale-125 w-7 h-7 ease-in-out duration-300  lg:w-5 lg:h-5  '
-              />
+              <a href={icon.link} target="_blank" rel="noopener noreferrer">
+                <Image
+                  src={icon.src}
+                  alt={`Icon ${index + 1}`}
+                  className='cursor-pointer icons hover:scale-125 w-7 h-7 ease-in-out duration-300 lg:w-5 lg:h-5'
+                />
+              </a>
             </div>
           ))}
         </div>
