@@ -77,7 +77,7 @@ const FooterTwo = () => {
           </div>
         </div>
         <div className='flex justify-center gap-9 py-4 mb:gap-8 lg:py-4 lg:gap-6'>
-           {icons.map((icon, index) => (
+          {icons.map((icon, index) => (
             <div key={index} className='flex items-center justify-center'>
               <a href={icon.link} target="_blank" rel="noopener noreferrer">
                 <Image
