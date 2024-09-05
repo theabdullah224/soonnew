@@ -22,7 +22,11 @@ import comingbg from "../public/assets/comingsoon/comingbg.png";
 import LevelsHeading from "./SoonNew/components/LevelsHeading";
 import FooterTwo from "./SoonNew/components/FooterTwo";
 import { Song_Myung } from "next/font/google";
-import EmailCopyComponent from './SoonNew/components/email'
+import Email from './SoonNew/components/Email'
+
+
+
+
 export default function Home() {
   // const [currentPage, setCurrentPage] = useState<number>(0);
   const controls = useAnimation();
@@ -224,7 +228,7 @@ export default function Home() {
           )}
 
           {currentPage === 1 && (
-            <div
+            <motion.div
               key="slide2"
               initial={{ scale: 0, y: "30vh" }}
               animate={{ scale: 1, y: 0 }}
@@ -268,7 +272,7 @@ export default function Home() {
                   anytime.
                 </p>
               </motion.div>
-            </div>
+            </motion.div>
           )}
 
           {currentPage === 2 && (
@@ -399,7 +403,7 @@ export default function Home() {
                   reach out to us for any queries or concerns you might have. We
                   are just a click away and ready to assist you!
                 </h1>
-                  <EmailCopyComponent/>
+                  <Email/>
 
               </motion.div>
             </motion.div>
