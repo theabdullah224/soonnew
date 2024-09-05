@@ -12,11 +12,11 @@ import { motion } from "framer-motion";
 
 // Array of icons
 const icons = [
-  tiktok,
-  instagram,
-  twitter,
-  youtube,
-  facebook
+  { src: tiktok, link: "https://www.tiktok.com/@etutor4me?_t=8pOCquOdGZV&_r=1" },
+  { src: instagram, link: "https://www.instagram.com/etutor4me?igsh=MTBtaThtdm1nMTQzdQ%3D%3D&utm_source=qr" },
+  { src: twitter, link: "https://x.com" },  // Add actual link here
+  { src: youtube, link: "https://www.youtube.com" },  // Add actual link here
+  { src: facebook, link: "https://www.facebook.com/profile.php?id=61564058677794" }
 ];
 
 const FooterTwo = () => {
@@ -83,17 +83,19 @@ const FooterTwo = () => {
           </div>
         </div>
         
-        <div className='flex justify-center gap-7 py-4 mb:gap-6 lg:py-4 lg:gap-4'>
-          {icons.map((icon, index) => (
-            <div key={index} className='flex items-center justify-center'>
-              <Image
-                src={icon}
-                alt={`Icon ${index + 1}`}
-                className='cursor-pointer icons hover:scale-125 w-5 h-5 ease-in-out duration-300 lg:w-4 lg:h-4'
-              />
-            </div>
-          ))}
-        </div>
+       <div className='flex justify-center gap-7 py-4 mb:gap-6 lg:py-4 lg:gap-4'>
+  {icons.map((icon, index) => (
+    <div key={index} className='flex items-center justify-center'>
+      <a href={icon.link} target="_blank" rel="noopener noreferrer">
+        <Image
+          src={icon.src}
+          alt={`Icon ${index + 1}`}
+          className='cursor-pointer icons hover:scale-125 w-5 h-5 ease-in-out duration-300 lg:w-4 lg:h-4'
+        />
+      </a>
+    </div>
+  ))}
+</div>
       </div>
     </motion.footer>
   )
